@@ -6,20 +6,12 @@
         outline: none;
     }
    
-    #Logo{
-        display:block;
-        position: relative;
-        border-radius:55%;
-        margin-left: auto;
-        margin-right: auto;
-        width: 175px;
-        height: 175px;
-        transform: translate(-0%, 10%);
-    }
+  
+    
     body {
     font-family: Baguette, Century;
-    background-color: lightgray;
-    padding: 50px;
+    background-color: rgb(59, 38, 38);
+    padding: 200px;
     }
     .login {
     margin: 20px auto;
