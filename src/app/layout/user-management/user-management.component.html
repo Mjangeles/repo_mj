@@ -1,41 +1,53 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>User Management</title>
-    <link rel="stylesheet" type="text/css" href="user-management.component.scss">
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Users</a></li>
-                <li><a href="#">Roles</a></li>
-                <li><a href="#">Settings</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <div class="user-management-container">
-            <h1>User Management</h1>
-            <div class="user-list">
-                <h2>User List</h2>
-                <ul>
-                    <li>User 1</li>
-                    <li>User 2</li>
-                    <li>User 3</li>
-                    <li>User 4</li>
-                </ul>
-            </div>
-            <div class="user-actions">
-               
-                <button>Add User</button>
-                <button>Edit User</button>
-                <button>Delete User</button>
-            </div>
+<div class="container mt-5">
+  <h1 class="text-center">User Management</h1>
+    <form class="mt-5">
+        <div class="row mb-3">
+          <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="inputEmail3" placeholder="mjangeles@gmail.com">
+          </div>
         </div>
-    </main>
-</body>
-</html>
-
+        <div class="row mb-3">
+            <label for="inputName" class="col-sm-2 col-form-label">First Name</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="inputName" placeholder="Mj">
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="inputLastName" class="col-sm-2 col-form-label" >Last Name</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="inputLastName" placeholder="Angeles">
+            </div>
+          </div>
+        <div class="row mb-3">
+          <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+          <div class="col-sm-10">
+            <input type="password" class="form-control" id="inputPassword3" placeholder="**********">
+          </div>
+        </div>
+        <div class="row mb-3">
+            <label for="inputPassword4" class="col-sm-2 col-form-label">Confirm Password</label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control" id="inputPassword4" placeholder="**********">
+            </div>
+          </div>
+        <fieldset class="row mb-3">
+          <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
+          <div class="col-sm-10">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+              <label class="form-check-label" for="gridRadios1">
+                Male
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+              <label class="form-check-label" for="gridRadios2">
+                Female
+              </label>
+            </div>
+          </div>
+        </fieldset>
+        <button type="submit" class="btn btn-primary">Save</button>
+      </form>
+</div>

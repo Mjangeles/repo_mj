@@ -12,10 +12,10 @@ import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { ScreenComponent } from './components/screen/screen.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
+
 @NgModule({
   declarations: [
     AppComponent,
-    
   ],
   imports: [
     BrowserModule,

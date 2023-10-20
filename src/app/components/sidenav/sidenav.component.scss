@@ -1,46 +1,29 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-.sidenav {
-    background-color: #333;
-    color: #fff;
+.sidenav{
     width: 250px;
-    padding: 20px;
-    text-align: left;
+    background-color: #333;
+    height: 100%;
+    min-height: 100vh;
 }
 
-h2 {
-    color: #007BFF;
+
+.sidenav-links{
+    li{
+        color: white;
+        font-size: 1.1rem;
+        padding: 5px 10px;
+        cursor: pointer;
+        margin: 5px 0;
+        border-radius: .3em;
+        transition-property: all;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 150ms;
+
+        &:hover{
+            background-color: #78716c;
+        }
+    }
 }
 
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-li {
-    margin-bottom: 10px;
-}
-
-a {
-    text-decoration: none;
-    color: #fff;
-}
-
-.content {
-    padding: 20px;
-    flex: 1;
-    background-color: #f3f3f3;
-}
-
-h1 {
-    color: #333;
-}
-
-p {
-    color: #555;
+.link-active{
+    background-color: #78716c;
 }
